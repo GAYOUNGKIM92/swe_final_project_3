@@ -1,0 +1,127 @@
+/*전체 페이지 설정*/
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+/*header 설정*/
+
+header {
+    padding: 1em 3em 0 6em;
+    border-bottom: 1px solid #ddd;
+    height: 150px;
+}
+
+header h1,
+p {
+    display: inline-block;
+    margin: 0.7em 0.2em;
+}
+
+header h1 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 2em;
+}
+
+header p {
+    font-family: 'Parisienne', cursive;
+}
+
+
+/*nav, article, aside 포함하는 div 설정*/
+
+.content {
+    display: flex;
+    margin-top: 1em;
+}
+
+/*---- nav, aside 내부 공통 디자인----*/
+
+nav,
+aside {
+    flex-basis: 16em;
+    padding: 1em 2em;
+    /*사이즈를 고정하기 위해 flex-shrink 사용*/
+    flex-shrink: 0;
+}
+
+
+
+/*------------ nav list ------------*/
+
+/*nav 리스트의 스타일 제거*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav li {
+    padding: 0.5em 0;
+}
+
+nav ul a {
+    font-size: 0.9em;
+}
+
+#navigation>div {
+    padding-left: 1em;
+}
+
+/*level2 nav 글씨 디자인*/
+.dropdown>a li:nth-child(1) {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/*level3 nav 내용물 숨기기*/
+.dropdown_content {
+    display: none;
+    margin-bottom: 0.6em;
+    padding-left: 1em;
+}
+
+/*nav list에 hover시 배경색 변경*/
+.dropdown li:hover {    
+    background-color: #eee;
+}
+
+/*level2 글씨에 hover시 level3 내용물 나타냄*/
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+
+
+article {
+    /*사이즈를 동적으로 조절하기 위해 flex-grow 사용*/
+    flex-grow: 1;
+}
+
+/*iframe 보이는 창 크기 지정 및 스타일링*/
+iframe {
+    height: 80vh;
+    width: 100%;
+    border: none;
+}
+
+/*footer 스타일링*/
+footer {
+    font-family: Montserrat, sans-serif;
+    padding: 2em 0.8em;
+    text-align: center;
+    color: #231F20;
+    font-size: 0.8em;
+}

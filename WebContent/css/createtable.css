@@ -1,0 +1,45 @@
+* {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+table, td, th {
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.week {
+	width: 85px;
+}
+
+table tr:first-child {
+	height: 40px;
+	background-color: #2f87c1;
+	color: white;
+}
+
+table tr {
+	height: 98px;
+}
+
+.coursebtn {
+	font-size: 0.3em;
+	width: 80px;
+	height: 80px;
+	background-color: ghostwhite;
+}
+
+.download-btn {
+	font-weight: 600;
+	display: inline;
+	padding: 0.6em;
+	margin: 2em 0.5em 0.5em 0.5em;
+	color: #FFF;
+	background-color: #2f87c1;
+	cursor: pointer;
+	border: none;
+	border-radius: 6px;
+}
+
+table {
+	display: inline;
+}

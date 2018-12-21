@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>home</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One|Parisienne|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1><a href="home.html">Naval Architecture <br> & Ocean Engineering</a></h1>
+            <p>Department Management System</p>
+        </header>
+
+        <section class="content">
+            <nav>
+                <ul id="navigation">
+                    <div class="dropdown">
+                        <a>
+                            <li>교수관리</li>
+                        </a>
+                        <ul class="dropdown_content">
+                            <li><a href="inquiry_professor.jsp" target="iframe_a">교수조회</a></li>
+                            <li><a href="register_professor.jsp" target="iframe_a">교수등록</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a>
+                            <li>학생관리</li>
+                        </a>
+                        <ul class="dropdown_content">
+                            <li><a href="inquiry_student.jsp" target="iframe_a">학생 기본정보조회</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a>
+                            <li>강의관리</li>
+                        </a>
+                        <ul class="dropdown_content">
+                            <li><a href="inquiry_course.jsp" target="iframe_a">강의 조회</a></li>
+                            <li><a href="register_course.jsp" target="iframe_a">강의 등록</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a>
+                            <li>강의실관리</li>
+                        </a>
+                        <ul class="dropdown_content">
+                            <li><a href="inquiry_classroom.jsp" target="iframe_a">강의실 조회</a></li>
+                            <li><a href="register_classroom.jsp" target="iframe_a">강의실 등록</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a>
+                            <li>졸업진단</li>
+                        </a>
+                        <ul class="dropdown_content">
+                            <li><a href="inquiry_grd.jsp" target="iframe_a">졸업불가 학생 조회</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a>
+                            <a href="createtimetale.jsp" target="iframe_a"><li>시간표생성</li></a>
+                        </a>
+
+                        <a>
+                            <a href="inquiry_timetable.jsp" target="iframe_a"><li>시간표조회</li></a>
+                        </a>
+
+                    </div>
+
+                </ul>
+            </nav>
+
+            <!-- scrolling yes -->
+            <article>
+                <iframe src="cal.PNG" name="iframe_a" scrolling="yes"></iframe>
+            </article>
+
+        </section>
+
+        <footer> Copyright &copy; 201501791 김가영 </footer>
+    </div>
+</body>
+
+</html>

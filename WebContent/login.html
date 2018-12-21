@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One|Parisienne|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <title>1.로그인</title>
+    <meta charset="UTF-8">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="login.html">Naval Architecture <br> & Ocean Engineering</a></h1>
+            <p>Department Management System</p>
+        </header>
+
+        <section class="content">
+            <nav>
+
+
+
+            </nav>
+
+            <!-- scrolling yes -->
+            <article>
+                <div id="login">
+                    <p><img src="lock.png" alt="">시스템에 접속하기 위해서는 비밀번호를 입력해주세요.</p><br><br>
+                    <input type="password" id="psw" name="password" required>
+                    <input type="button" id="loginbnt" onclick="login()" value="로그인">
+                </div>
+            </article>
+
+        </section>
+
+        <footer> Copyright &copy; 201501791 김가영 </footer>
+    </div>
+
+    <script src="myScript.js"></script>
+    <script>
+        var ad_psw = "hellonaoe";
+
+        function login() {
+            var input_psw = document.getElementById("psw").value;
+            if (input_psw == "") {
+                alert("비밀번호를 입력해주세요.");
+            } else if (input_psw != ad_psw) {
+                alert("비밀번호가 옳지 않습니다.");
+            } else {
+                alert("로그인되었습니다!");
+                window.location = 'home.html';
+            }
+        }
+
+    </script>
+</body>
+
+</html>

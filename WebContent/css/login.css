@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+header {
+    padding: 1em 3em 0 6em;
+    border-bottom: 1px solid #ddd;
+    height: 150px;
+}
+
+header h1,
+p {
+    display: inline-block;
+    margin: 0.7em 0.2em;
+}
+
+header h1 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 2em;
+}
+
+header p {
+    font-family: 'Parisienne', cursive;
+}
+
+article {
+    height: 650px;
+}
+
+#login {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+#login p {
+    font-size: 1.2em;
+}
+
+#login img{
+    height: 1.2em;
+}
+
+#login input {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1em;
+}
+
+footer {
+    font-family: Montserrat, sans-serif;
+    padding: 2em 0.8em;
+    text-align: center;
+    color: #231F20;
+    font-size: 0.8em;
+}
